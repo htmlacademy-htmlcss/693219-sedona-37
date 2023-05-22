@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Константин Поликанин](https://up.htmlacademy.ru/htmlcss/37/user/693219).
-* Наставник: `Неизвестно`.
+- Студент: [Константин Поликанин](https://up.htmlacademy.ru/htmlcss/37/user/693219).
+- Наставник: [Алиса Пепел](https://htmlacademy.ru/profile/id615601).
 
 ---
 
