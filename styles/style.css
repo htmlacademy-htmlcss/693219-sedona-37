@@ -25,11 +25,16 @@ body {
 .navigation-item a {
   color: black;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 a.button {
   background: #756157;
   color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .hero {
@@ -41,6 +46,16 @@ a.button {
 
 .visually-hidden {
   display: none;
+}
+
+.advantages {
+  text-align: center;
+}
+
+.advantages h2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .advantages h3 {
