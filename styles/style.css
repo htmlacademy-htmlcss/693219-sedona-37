@@ -175,9 +175,14 @@ header .button {
   text-transform: uppercase;
   background-color: #82b3d3;
   color: #ffffff;
+  border: none;
 }
 
 /* Стили для подвала */
+.page-footer {
+  display: flex;
+}
+
 .page-footer a {
   text-decoration: none;
   color: black;
@@ -190,4 +195,177 @@ header .button {
 
 .social-list {
   list-style: none;
+  display: flex;
+}
+
+/* Стили для страницы Каталога */
+/* Стили для блока filter-content*/
+.filter-content {
+  background-image: url(../images/filter-bg.jpg);
+  background-color: #82b3d3;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.filter-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-content a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.filter-content h1 {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-legend {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.filter-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.submit-button {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #82b3d3;
+  color: #ffffff;
+  border: none;
+}
+
+.reset-button {
+  border: none;
+  background-color: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+/* Стили для блока catalog*/
+.catalog-find-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.catalog-sort-select {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  width: 292px;
+  height: 49px;
+}
+
+.view-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+/* Стили для карточки */
+.goods {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.goods h3 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.goods p {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.goods-more-button {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+}
+
+.goods .button {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.goods-to-favorite {
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+
+.goods-in-favorite {
+  background-color: #7db54f;
+  color: #ffffff;
+}
+
+.stars-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.goods-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  display: inline;
+}
+
+/* Стили для пагинации */
+.pagination-list {
+  list-style: none;
+  display: flex;
+}
+
+.pagination-item a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #82b3d3;
+}
+
+.pagination-item.active a {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.pagination-item.none a {
+  color: #000000;
+  background: none;
 }
