@@ -28,6 +28,11 @@ body {
   display: none;
 }
 
+.button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+}
+
 /* Стили для шапки */
 .navigation-list {
   list-style: none;
@@ -58,13 +63,21 @@ header .button {
 .hero {
   background-image: url(../images/hero-bg.jpg);
   background-color: #82b3d3;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center bottom;
+  text-align: center;
 }
 
 /* Стили для блока advantages*/
 .advantages {
   text-align: center;
+}
+
+.advantages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages h2 {
@@ -78,6 +91,7 @@ header .button {
 .advantages-item h3 {
   font-size: 24px;
   color: black;
+  text-transform: uppercase;
   line-height: 28px;
 }
 
@@ -106,6 +120,12 @@ header .button {
 /* Стили для блока services*/
 .services {
   text-align: center;
+}
+
+.services-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .services h2 {
@@ -159,7 +179,7 @@ header .button {
 
   background-image: url(../images/subscribe-bg.jpg);
   background-color: #82b3d3;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -208,7 +228,7 @@ header .button {
 .filter-content {
   background-image: url(../images/filter-bg.jpg);
   background-color: #82b3d3;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
 }
@@ -315,6 +335,7 @@ header .button {
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .goods .button {
@@ -361,7 +382,7 @@ header .button {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #000000;
+  color: #ffffff;
   background-color: #82b3d3;
 }
 
