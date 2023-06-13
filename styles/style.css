@@ -159,9 +159,13 @@ header .button {
 }
 
 .services-list {
-  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
+}
+
+.services-item {
+  width: 400px;
 }
 
 .services h2 {
@@ -242,6 +246,9 @@ header .button {
 /* Стили для подвала */
 .page-footer {
   display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .page-footer a {
@@ -252,11 +259,6 @@ header .button {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.social-list {
-  list-style: none;
-  display: flex;
 }
 
 /* Стили для страницы Каталога */
