@@ -104,7 +104,8 @@ header .button {
 }
 
 .advantages-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -129,9 +130,15 @@ header .button {
   line-height: 21px;
 }
 
+.advantages-item {
+  width: 400px;
+}
+
 .advantages-item-blue {
   color: #ffffff;
   background-color: #82b3d3;
+  width: 1200px;
+  display: flex;
 }
 
 .advantages-item-blue h3 {
