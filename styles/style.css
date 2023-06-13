@@ -47,10 +47,26 @@ body {
 }
 
 /* Стили для шапки */
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  width: 140px;
+  padding-right: 28px;
+}
+
 .navigation-list {
-  list-style: none;
+  width: 400px;
   margin: 0;
   padding: 0;
+}
+
+.navigation-user {
+  width: 300px;
+  margin-left: auto;
 }
 
 .navigation-link {
