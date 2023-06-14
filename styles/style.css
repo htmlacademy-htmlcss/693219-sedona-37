@@ -18,6 +18,7 @@
 /* Общие стили для страницы */
 html {
   height: 100%;
+  background-color: #f2f2f2;
 }
 
 body {
@@ -263,6 +264,23 @@ header .button {
 
 /* Стили для страницы Каталога */
 /* Стили для блока filter-content*/
+.filter {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+/* Стили для шапки вунутри каталога */
+.inner-header {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.filter-buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .filter-content {
   background-image: url(../images/filter-bg.jpg);
   background-color: #82b3d3;
@@ -292,6 +310,7 @@ header .button {
   line-height: 21px;
 }
 
+/* Стили для блока с поиском */
 .filter-legend {
   font-weight: 700;
   font-size: 20px;
@@ -322,7 +341,49 @@ header .button {
   color: #ffffff;
 }
 
+.filter .left {
+  display: flex;
+  gap: 75px;
+  margin-right: 140px;
+}
+
+.filter .infra {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.filter .right {
+  display: flex;
+  width: 549px;
+}
+
+.filter .price {
+  width: 288px;
+  margin-right: 70px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter .buttons {
+  display: flex;
+  flex-direction: column;
+  width: 191px;
+}
+
 /* Стили для блока catalog*/
+.header-catalog {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .catalog-find-text {
   font-weight: 700;
   font-size: 30px;

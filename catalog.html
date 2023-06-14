@@ -56,100 +56,134 @@
           </ul>
         </header>
         <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset>
-            <legend class="filter-legend">Инфраструктура:</legend>
-            <input type="checkbox" name="Бассейн" id="pool" checked />
-            <label class="filter-label" for="pool">Бассейн</label>
+          <div class="left">
+            <fieldset class="infra">
+              <legend class="filter-legend">Инфраструктура:</legend>
+              <div class="container">
+                <input type="checkbox" name="Бассейн" id="pool" checked />
+                <label class="filter-label" for="pool">Бассейн</label>
+              </div>
 
-            <input type="checkbox" name="Парковка" id="parking" checked />
-            <label class="filter-label" for="pool">Парковка</label>
+              <div class="container">
+                <input type="checkbox" name="Парковка" id="parking" checked />
+                <label class="filter-label" for="pool">Парковка</label>
+              </div>
 
-            <input type="checkbox" name="Wi-Fi" id="Wi-Fi" />
-            <label class="filter-label" for="pool">Wi-Fi</label>
-          </fieldset>
+              <div class="container">
+                <input type="checkbox" name="Wi-Fi" id="Wi-Fi" />
+                <label class="filter-label" for="pool">Wi-Fi</label>
+              </div>
+            </fieldset>
 
-          <fieldset>
-            <legend class="filter-legend">Тип жилья:</legend>
-            <input type="radio" name="Жилье" id="hotel" value="hotel" checked />
-            <label class="filter-label" for="hotel">Гостиница</label>
+            <fieldset class="infra">
+              <legend class="filter-legend">Тип жилья:</legend>
+              <div class="container">
+                <input
+                  type="radio"
+                  name="Жилье"
+                  id="hotel"
+                  value="hotel"
+                  checked
+                />
+                <label class="filter-label" for="hotel">Гостиница</label>
+              </div>
 
-            <input type="radio" name="Жилье" id="motel" value="motel" />
-            <label class="filter-label" for="motel">Мотель</label>
+              <div class="container">
+                <input type="radio" name="Жилье" id="motel" value="motel" />
+                <label class="filter-label" for="motel">Мотель</label>
+              </div>
 
-            <input
-              type="radio"
-              name="Жилье"
-              id="apartments"
-              value="apartments"
-            />
-            <label class="filter-label" for="apartments">Апартаменты</label>
-          </fieldset>
+              <div class="container">
+                <input
+                  type="radio"
+                  name="Жилье"
+                  id="apartments"
+                  value="apartments"
+                />
+                <label class="filter-label" for="apartments">Апартаменты</label>
+              </div>
+            </fieldset>
+          </div>
 
-          <fieldset>
-            <legend class="filter-legend">Стоимость, ₽:</legend>
-            <input
-              type="number"
-              name="minPrice"
-              id="minPrice"
-              value="0"
-              min="0"
-              max="10000"
-            />
-            <input
-              type="number"
-              name="maxPrice"
-              id="maxPrice"
-              value="9000"
-              min="0"
-              max="10000"
-            />
-          </fieldset>
+          <div class="right">
+            <fieldset class="price">
+              <legend class="filter-legend">Стоимость, ₽:</legend>
+              <input
+                type="number"
+                name="minPrice"
+                id="minPrice"
+                value="0"
+                min="0"
+                max="10000"
+              />
+              <input
+                type="number"
+                name="maxPrice"
+                id="maxPrice"
+                value="9000"
+                min="0"
+                max="10000"
+              />
+            </fieldset>
 
-          <input class="submit-button button" type="submit" value="Применить" />
-          <input class="reset-button button" type="reset" value="Сбросить" />
+            <div class="buttons">
+              <input
+                class="submit-button button"
+                type="submit"
+                value="Применить"
+              />
+              <input
+                class="reset-button button"
+                type="reset"
+                value="Сбросить"
+              />
+            </div>
+          </div>
         </form>
       </section>
 
       <section class="catalog">
         <h2 class="visually-hidden">Результаты поиска</h2>
-        <p class="catalog-find-text">Найдено гостиниц: 38</p>
+        <div class="header-catalog">
+          <p class="catalog-find-text">Найдено гостиниц: 38</p>
 
-        <select class="catalog-sort-select">
-          <option value="cheap">Сначала дешевые</option>
-        </select>
+          <select class="catalog-sort-select">
+            <option value="cheap">Сначала дешевые</option>
+          </select>
 
-        <ul class="view-list">
-          <li class="view-item">
-            <button class="view-button" type="button">
-              <img
-                src="images/table-icon.svg"
-                width="16"
-                height="14"
-                alt="Иконка таблицы"
-              />
-            </button>
-          </li>
-          <li class="view-item">
-            <button class="view-button" type="button">
-              <img
-                src="images/goods-icon.svg"
-                width="16"
-                height="14"
-                alt="Иконка карточки"
-              />
-            </button>
-          </li>
-          <li class="view-item">
-            <button class="view-button" type="button">
-              <img
-                src="images/list-icon.svg"
-                width="16"
-                height="14"
-                alt="Иконка списка"
-              />
-            </button>
-          </li>
-        </ul>
+          <ul class="view-list">
+            <li class="view-item">
+              <button class="view-button" type="button">
+                <img
+                  src="images/table-icon.svg"
+                  width="16"
+                  height="14"
+                  alt="Иконка таблицы"
+                />
+              </button>
+            </li>
+            <li class="view-item">
+              <button class="view-button" type="button">
+                <img
+                  src="images/goods-icon.svg"
+                  width="16"
+                  height="14"
+                  alt="Иконка карточки"
+                />
+              </button>
+            </li>
+            <li class="view-item">
+              <button class="view-button" type="button">
+                <img
+                  src="images/list-icon.svg"
+                  width="16"
+                  height="14"
+                  alt="Иконка списка"
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
 
         <ul class="goods">
           <li class="goods-item">
