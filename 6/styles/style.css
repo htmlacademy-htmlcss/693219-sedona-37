@@ -18,15 +18,21 @@
 /* Общие стили для страницы */
 html {
   height: 100%;
-  background-color: #f2f2f2;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  background: #ffffff;
   color: #333333;
+  height: 100%;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -250,6 +256,7 @@ header .button {
   width: 1060px;
   margin: 0 auto;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-footer a {
@@ -341,12 +348,6 @@ header .button {
   color: #ffffff;
 }
 
-.filter .left {
-  display: flex;
-  gap: 75px;
-  margin-right: 140px;
-}
-
 .filter .infra {
   width: 150px;
   display: flex;
@@ -354,11 +355,6 @@ header .button {
   padding: 0;
   margin: 0;
   border: none;
-}
-
-.filter .right {
-  display: flex;
-  width: 549px;
 }
 
 .filter .price {
