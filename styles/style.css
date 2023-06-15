@@ -16,12 +16,32 @@
 }
 
 /* Общие стили для страницы */
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  background: #ffffff;
   color: #333333;
+  height: 100%;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1200px;
+  min-height: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .visually-hidden {
@@ -34,10 +54,26 @@ body {
 }
 
 /* Стили для шапки */
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  width: 140px;
+  padding-right: 28px;
+}
+
 .navigation-list {
-  list-style: none;
+  width: 400px;
   margin: 0;
   padding: 0;
+}
+
+.navigation-user {
+  width: 300px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -75,7 +111,8 @@ header .button {
 }
 
 .advantages-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -100,9 +137,15 @@ header .button {
   line-height: 21px;
 }
 
+.advantages-item {
+  width: 400px;
+}
+
 .advantages-item-blue {
   color: #ffffff;
   background-color: #82b3d3;
+  width: 1200px;
+  display: flex;
 }
 
 .advantages-item-blue h3 {
@@ -123,9 +166,13 @@ header .button {
 }
 
 .services-list {
-  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
+}
+
+.services-item {
+  width: 400px;
 }
 
 .services h2 {
@@ -206,6 +253,10 @@ header .button {
 /* Стили для подвала */
 .page-footer {
   display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-footer a {
@@ -218,13 +269,25 @@ header .button {
   text-transform: uppercase;
 }
 
-.social-list {
-  list-style: none;
-  display: flex;
-}
-
 /* Стили для страницы Каталога */
 /* Стили для блока filter-content*/
+.filter {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+/* Стили для шапки вунутри каталога */
+.inner-header {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.filter-buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .filter-content {
   background-image: url(../images/filter-bg.jpg);
   background-color: #82b3d3;
@@ -254,6 +317,7 @@ header .button {
   line-height: 21px;
 }
 
+/* Стили для блока с поиском */
 .filter-legend {
   font-weight: 700;
   font-size: 20px;
@@ -284,7 +348,38 @@ header .button {
   color: #ffffff;
 }
 
+.filter .infra {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.filter .price {
+  width: 288px;
+  margin-right: 70px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter .buttons {
+  display: flex;
+  flex-direction: column;
+  width: 191px;
+}
+
 /* Стили для блока catalog*/
+.header-catalog {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .catalog-find-text {
   font-weight: 700;
   font-size: 30px;
