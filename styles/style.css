@@ -70,6 +70,11 @@ body {
 .navigation-logo {
   width: 140px;
   padding-right: 28px;
+  display: block;
+}
+
+.navigation-logo img {
+  display: block;
 }
 
 .navigation-list {
@@ -79,6 +84,7 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .navigation-user {
@@ -87,8 +93,8 @@ body {
 }
 
 .navigation-user .navigation-link {
-  min-width: 40px;
-  min-height: 40px;
+  min-width: 16px;
+  min-height: 22px;
 }
 
 .navigation-link {
@@ -98,11 +104,13 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-decoration: none;
-  text-align: center;
   color: black;
 }
 
 header .button {
+  display: block;
+  padding: 8px 34px;
+  border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -110,6 +118,11 @@ header .button {
   background-color: #756157;
   text-decoration: none;
   font-weight: 700;
+}
+
+.main-container {
+  margin: 0;
+  padding: 0;
 }
 
 /* Стили для блока hero*/
