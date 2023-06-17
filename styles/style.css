@@ -173,8 +173,9 @@ header .button {
   color: black;
   text-transform: uppercase;
   line-height: 28px;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 62px;
+  width: 175px;
 }
 
 .advantages-item p {
@@ -212,7 +213,6 @@ header .button {
 }
 
 /* Стили для блока services*/
-
 .services-list {
   display: flex;
   margin: 0;
@@ -263,6 +263,9 @@ header .button {
 
 /* Стили для блока hotel-search*/
 .hotel-search {
+  margin: 0 auto;
+  padding: 56px 0;
+  width: 592px;
   text-align: center;
 }
 
@@ -271,6 +274,12 @@ header .button {
   line-height: 36px;
   text-transform: uppercase;
   color: black;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.hotel-search p {
+  margin-bottom: 56px;
 }
 
 .hotel-search .button {
@@ -280,6 +289,8 @@ header .button {
   background-color: #756157;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 8px 50px;
+  border-radius: 4px;
 }
 
 /* Стили для блока subscribe*/
@@ -291,12 +302,22 @@ header .button {
   background-color: #82b3d3;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .subscribe h2 {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.subscribe p {
+  width: 475px;
+  margin: 0 auto;
+  margin-bottom: 54px;
 }
 
 .subscribe .button {
@@ -306,6 +327,20 @@ header .button {
   background-color: #82b3d3;
   color: #ffffff;
   border: none;
+  padding: 8px 50px;
+  border-radius: 0 4px 4px 0;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-form input {
+  border: none;
+  width: 452px;
+  height: 52px;
+  border-radius: 4px 0 0 4px;
 }
 
 .subscribe.catalog-page {
@@ -320,6 +355,8 @@ header .button {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .page-footer a {
@@ -330,6 +367,24 @@ header .button {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+  align-items: center;
+}
+
+.social-item {
+  padding: 10px;
+}
+
+.social-item img {
+  display: block;
 }
 
 /* Стили для страницы Каталога */
