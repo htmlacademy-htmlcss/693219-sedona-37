@@ -173,8 +173,9 @@ header .button {
   color: black;
   text-transform: uppercase;
   line-height: 28px;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 62px;
+  width: 175px;
 }
 
 .advantages-item p {
@@ -212,7 +213,6 @@ header .button {
 }
 
 /* Стили для блока services*/
-
 .services-list {
   display: flex;
   margin: 0;
@@ -263,6 +263,9 @@ header .button {
 
 /* Стили для блока hotel-search*/
 .hotel-search {
+  margin: 0 auto;
+  padding: 56px 0;
+  width: 592px;
   text-align: center;
 }
 
@@ -271,6 +274,12 @@ header .button {
   line-height: 36px;
   text-transform: uppercase;
   color: black;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.hotel-search p {
+  margin-bottom: 56px;
 }
 
 .hotel-search .button {
@@ -280,6 +289,8 @@ header .button {
   background-color: #756157;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 8px 50px;
+  border-radius: 4px;
 }
 
 /* Стили для блока subscribe*/
@@ -291,12 +302,22 @@ header .button {
   background-color: #82b3d3;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .subscribe h2 {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.subscribe p {
+  width: 475px;
+  margin: 0 auto;
+  margin-bottom: 54px;
 }
 
 .subscribe .button {
@@ -306,6 +327,21 @@ header .button {
   background-color: #82b3d3;
   color: #ffffff;
   border: none;
+  padding: 8px 50px;
+  border-radius: 0 4px 4px 0;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-form input {
+  border: none;
+  width: 452px;
+  height: 52px;
+  border-radius: 4px 0 0 4px;
+  background: #f2f2f2;
 }
 
 .subscribe.catalog-page {
@@ -320,6 +356,8 @@ header .button {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .page-footer a {
@@ -330,6 +368,24 @@ header .button {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+  align-items: center;
+}
+
+.social-item {
+  padding: 10px;
+}
+
+.social-item img {
+  display: block;
 }
 
 /* Стили для страницы Каталога */
@@ -357,12 +413,8 @@ header .button {
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
-}
-
-.filter-content ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  padding-top: 35px;
+  padding-bottom: 70px;
 }
 
 .filter-content a {
@@ -373,11 +425,19 @@ header .button {
 .filter-content h1 {
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 21px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
 }
 
 /* Стили для блока с поиском */
@@ -411,27 +471,68 @@ header .button {
   color: #ffffff;
 }
 
-.filter .infra {
+.infra {
   width: 150px;
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 0;
   border: none;
+  margin-right: 70px;
+}
+
+.filter-legend {
+  margin-bottom: 32px;
+}
+
+.filter-label {
+  margin-bottom: 16px;
+}
+
+.filter-label input {
+  margin-right: 16px;
+}
+
+.filter-label:last-child {
+  margin-bottom: 0;
 }
 
 .filter .price {
   width: 288px;
-  margin-right: 70px;
   border: none;
   padding: 0;
   margin: 0;
+  margin-left: 70px;
+}
+
+.price legend {
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.price input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 140px;
 }
 
 .filter .buttons {
   display: flex;
   flex-direction: column;
   width: 191px;
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.filter .button {
+  padding: 8px 50px;
+  border-radius: 4px;
+  margin-bottom: 32px;
+}
+
+.filter .button:last-child {
+  margin-bottom: 0;
 }
 
 /* Стили для блока catalog*/
@@ -441,6 +542,8 @@ header .button {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
+  padding-top: 50px;
 }
 
 .catalog-find-text {
@@ -449,6 +552,7 @@ header .button {
   line-height: 36px;
   text-transform: uppercase;
   color: black;
+  margin: 0;
 }
 
 .catalog-sort-select {
@@ -466,24 +570,72 @@ header .button {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
+  gap: 8px;
+}
+
+.view-item button {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.view-item button.active {
+  border: 2px solid #000000;
 }
 
 /* Стили для карточки */
 .goods {
   list-style: none;
-  margin: 0;
+  width: 1060px;
+  margin: 0 auto;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.goods-item {
+  box-sizing: border-box;
+  outline: 1px solid #e6e6e6;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.goods-item img {
+  order: -1;
+  margin-bottom: 16px;
 }
 
 .goods h3 {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .goods p {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .goods-more-button {
@@ -494,6 +646,8 @@ header .button {
   background-color: #756157;
   text-decoration: none;
   font-weight: 700;
+  padding: 8px 26px;
+  border-radius: 4px;
 }
 
 .goods .button {
@@ -501,6 +655,8 @@ header .button {
   line-height: 20px;
   text-transform: uppercase;
   border: none;
+  padding: 8px 26px;
+  border-radius: 4px;
 }
 
 .goods-to-favorite {
@@ -513,11 +669,23 @@ header .button {
   color: #ffffff;
 }
 
+.raitin-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .stars-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
+}
+
+.stars-item img {
+  display: block;
+  margin: 0;
 }
 
 .goods-rating {
@@ -526,12 +694,18 @@ header .button {
   text-transform: uppercase;
   background-color: #f2f2f2;
   display: inline;
+  padding: 8px 23px;
+  border-radius: 4px;
 }
 
 /* Стили для пагинации */
 .pagination-list {
   list-style: none;
   display: flex;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  width: 1060px;
+  gap: 8px;
 }
 
 .pagination-item a {
@@ -542,6 +716,12 @@ header .button {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82b3d3;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 
 .pagination-item.active a {
