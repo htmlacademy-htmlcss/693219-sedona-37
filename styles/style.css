@@ -412,12 +412,8 @@ header .button {
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
-}
-
-.filter-content ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  padding-top: 35px;
+  padding-bottom: 70px;
 }
 
 .filter-content a {
@@ -428,11 +424,19 @@ header .button {
 .filter-content h1 {
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 21px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
 }
 
 /* Стили для блока с поиском */
@@ -466,27 +470,68 @@ header .button {
   color: #ffffff;
 }
 
-.filter .infra {
+.infra {
   width: 150px;
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 0;
   border: none;
+  margin-right: 70px;
+}
+
+.filter-legend {
+  margin-bottom: 32px;
+}
+
+.filter-label {
+  margin-bottom: 16px;
+}
+
+.filter-label input {
+  margin-right: 16px;
+}
+
+.filter-label:last-child {
+  margin-bottom: 0;
 }
 
 .filter .price {
   width: 288px;
-  margin-right: 70px;
   border: none;
   padding: 0;
   margin: 0;
+  margin-left: 70px;
+}
+
+.price legend {
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.price input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 140px;
 }
 
 .filter .buttons {
   display: flex;
   flex-direction: column;
   width: 191px;
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.filter .button {
+  padding: 8px 50px;
+  border-radius: 4px;
+  margin-bottom: 32px;
+}
+
+.filter .button:last-child {
+  margin-bottom: 0;
 }
 
 /* Стили для блока catalog*/
@@ -496,6 +541,8 @@ header .button {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
+  padding-top: 50px;
 }
 
 .catalog-find-text {
@@ -504,6 +551,7 @@ header .button {
   line-height: 36px;
   text-transform: uppercase;
   color: black;
+  margin: 0;
 }
 
 .catalog-sort-select {
@@ -521,24 +569,72 @@ header .button {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
+  gap: 8px;
+}
+
+.view-item button {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.view-item button.active {
+  border: 2px solid #000000;
 }
 
 /* Стили для карточки */
 .goods {
   list-style: none;
-  margin: 0;
+  width: 1060px;
+  margin: 0 auto;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.goods-item {
+  box-sizing: border-box;
+  outline: 1px solid #e6e6e6;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.goods-item img {
+  order: -1;
+  margin-bottom: 16px;
 }
 
 .goods h3 {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .goods p {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .goods-more-button {
@@ -549,6 +645,8 @@ header .button {
   background-color: #756157;
   text-decoration: none;
   font-weight: 700;
+  padding: 8px 26px;
+  border-radius: 4px;
 }
 
 .goods .button {
@@ -556,6 +654,8 @@ header .button {
   line-height: 20px;
   text-transform: uppercase;
   border: none;
+  padding: 8px 26px;
+  border-radius: 4px;
 }
 
 .goods-to-favorite {
@@ -568,11 +668,23 @@ header .button {
   color: #ffffff;
 }
 
+.raitin-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .stars-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
+}
+
+.stars-item img {
+  display: block;
+  margin: 0;
 }
 
 .goods-rating {
@@ -581,12 +693,18 @@ header .button {
   text-transform: uppercase;
   background-color: #f2f2f2;
   display: inline;
+  padding: 8px 23px;
+  border-radius: 4px;
 }
 
 /* Стили для пагинации */
 .pagination-list {
   list-style: none;
   display: flex;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  width: 1060px;
+  gap: 8px;
 }
 
 .pagination-item a {
@@ -597,6 +715,12 @@ header .button {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82b3d3;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 
 .pagination-item.active a {
