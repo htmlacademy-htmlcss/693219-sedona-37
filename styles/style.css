@@ -601,8 +601,8 @@ header .button {
   width: 1060px;
   margin: 0 auto;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
   gap: 20px;
   margin-bottom: 80px;
 }
