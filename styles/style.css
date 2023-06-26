@@ -602,23 +602,29 @@ header .button {
   margin: 0 auto;
   padding: 0;
   display: grid;
-  grid-template-columns: 340px 340px 340px;
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
   margin-bottom: 80px;
 }
 
 .goods-item {
-  box-sizing: border-box;
   outline: 1px solid #e6e6e6;
   padding: 20px;
+  box-sizing: border-box;
   border-radius: 4px;
-  display: flex;
-  flex-direction: column;
+  width: 340px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 212px 1fr min-content min-content min-content;
+  gap: 16px 20px;
+  align-items: center;
 }
 
 .goods-item img {
-  order: -1;
-  margin-bottom: 16px;
+  display: block;
+  grid-column: 2 span;
+  width: 100%;
+  object-fit: contain;
 }
 
 .goods h3 {
@@ -626,13 +632,9 @@ header .button {
   line-height: 28px;
   color: #000000;
   margin: 0;
-  margin-bottom: 16px;
-}
-
-.price-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
+  grid-column: 2 span;
+  grid-row-start: 2;
+  align-self: flex-start;
 }
 
 .goods p {
@@ -641,22 +643,14 @@ header .button {
   margin: 0;
 }
 
-.button-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
+.priceHotel {
+  justify-self: flex-end;
 }
 
 .goods-more-button {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
-  font-weight: 700;
-  padding: 8px 26px;
-  border-radius: 4px;
 }
 
 .goods .button {
@@ -664,8 +658,21 @@ header .button {
   line-height: 20px;
   text-transform: uppercase;
   border: none;
-  padding: 8px 26px;
   border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+  word-break: break-all;
+}
+
+.goods-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+  word-break: break-all;
 }
 
 .goods-to-favorite {
@@ -676,12 +683,6 @@ header .button {
 .goods-in-favorite {
   background-color: #7db54f;
   color: #ffffff;
-}
-
-.raitin-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .stars-list {
@@ -695,16 +696,6 @@ header .button {
 .stars-item img {
   display: block;
   margin: 0;
-}
-
-.goods-rating {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  background-color: #f2f2f2;
-  display: inline;
-  padding: 8px 23px;
-  border-radius: 4px;
 }
 
 /* Стили для пагинации */
