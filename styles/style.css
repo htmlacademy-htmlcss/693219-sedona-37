@@ -61,6 +61,11 @@ body {
 }
 
 /* Стили для шапки */
+.page-header {
+  margin-bottom: -6px;
+  z-index: 1;
+}
+
 .navigation {
   display: flex;
   width: 1060px;
