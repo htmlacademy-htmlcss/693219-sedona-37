@@ -525,22 +525,54 @@ header .button-brown {
   text-transform: uppercase;
 }
 
+.logo-footer-icon {
+  fill: #000;
+}
+
+.logo-footer-icon:hover {
+  fill: #756157;
+}
+
+.logo-footer-icon:focus {
+  fill: #756157;
+  outline: none;
+}
+
+.logo-footer-icon:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 .social-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  max-width: 300px;
   align-items: center;
 }
 
-.social-item {
-  padding: 10px;
+.social-item a {
+  display: flex;
+  width: 47px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
-.social-item img {
-  display: block;
+.social-icon {
+  fill: #83b3d3;
+}
+
+.social-icon:hover {
+  fill: #68a2ca;
+}
+
+.social-icon:focus {
+  fill: #68a2ca;
+}
+
+.social-icon:active {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .phonenumber {
@@ -559,8 +591,6 @@ header .button-brown {
 .phonenumber:active {
   color: rgba(117, 97, 87, 0.3);
 }
-
-/* rgba(117, 97, 87, 0.3) */
 
 /* Стили для страницы Каталога */
 /* Стили для блока filter-content*/
@@ -612,6 +642,42 @@ header .button-brown {
   display: flex;
   gap: 10px;
   margin-bottom: 40px;
+}
+
+.breadcrumbs-link {
+  fill: #ffffff;
+  color: ffffff;
+}
+
+.breadcrumbs-link:hover {
+  fill: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  fill: #ffffff;
+  color: #ffffff;
+}
+
+.breadcrumbs-link:active {
+  fill: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 29px;
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-child):before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  right: -25px;
+  background-image: url(../images/breadcrumbs-arrow.svg);
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
 }
 
 /* Стили для блока с поиском */
@@ -751,14 +817,27 @@ header .button-brown {
   gap: 8px;
 }
 
-.view-item button {
+.view-button {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   padding: 16px;
 }
 
-.view-item button.active {
+.view-button:hover {
+  border-color: #000000;
+}
+
+.view-button:focus {
+  border-color: #68a2ca;
+  outline: none;
+}
+
+.view-button:active {
+  border-color: #000000;
+}
+
+.view-button.active {
   border: 2px solid #000000;
 }
 
