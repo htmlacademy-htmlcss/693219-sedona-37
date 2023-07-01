@@ -543,6 +543,25 @@ header .button-brown {
   display: block;
 }
 
+.phonenumber {
+  color: #000000;
+}
+
+.phonenumber:hover {
+  color: #756157;
+}
+
+.phonenumber:focus {
+  color: #756157;
+  outline: none;
+}
+
+.phonenumber:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+/* rgba(117, 97, 87, 0.3) */
+
 /* Стили для страницы Каталога */
 /* Стили для блока filter-content*/
 .filter {
@@ -847,10 +866,8 @@ header .button-brown {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #82b3d3;
   display: flex;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   justify-content: center;
   align-items: center;
