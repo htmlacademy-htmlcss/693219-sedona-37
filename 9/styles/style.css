@@ -55,9 +55,95 @@ body {
   overflow: hidden;
 }
 
-.button {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
+.button-brown {
+  color: #ffffff;
+  background-color: #756157;
+}
+
+.button-brown:hover {
+  background-color: #615048;
+}
+
+.button-brown:focus {
+  background-color: #615048;
+  outline: none;
+}
+
+.button-brown:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+.button-brown:disabled {
+  background-color: #e5e5e5;
+}
+
+.button-blue {
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+
+.button-blue:hover {
+  background-color: #68a2ca;
+}
+
+.button-blue:focus {
+  background-color: #68a2ca;
+  outline: none;
+}
+
+.button-blue:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82b3d3;
+}
+
+.button-blue:disabled {
+  background-color: #e5e5e5;
+}
+
+.button-green {
+  background-color: #7db54f;
+  color: #ffffff;
+}
+
+.button-green:hover {
+  background-color: #6c9e42;
+}
+
+.button-green:focus {
+  background-color: #6c9e42;
+  outline: none;
+}
+
+.button-green:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #7db54f;
+}
+
+.button-green:disabled {
+  background-color: #e5e5e5;
+}
+
+.button-transparent {
+  background-color: inherit;
+  color: #ffffff;
+}
+
+.button-transparent:hover {
+  opacity: 60%;
+}
+
+.button-transparent:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.button-transparent:disabled {
+  opacity: 10%;
+}
+
+.button-transparent:active {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Стили для шапки */
@@ -67,10 +153,26 @@ body {
   margin: 0 auto;
 }
 
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #dbdbdb;
+}
+
 .navigation-logo {
   width: 140px;
+  height: 64px;
+  z-index: 1;
   padding-right: 28px;
   display: block;
+}
+
+.navigation-user .navigation-item:last-child {
+  margin-left: 20px;
 }
 
 .navigation-logo img {
@@ -105,17 +207,44 @@ body {
   line-height: 24px;
   text-decoration: none;
   color: black;
+  position: relative;
 }
 
-header .button {
+.navigation-link.active {
+  text-decoration: underline;
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 19px;
+  text-underline-position: under;
+}
+
+.likes {
+  position: relative;
+}
+
+.likes::before {
+  content: "13";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #7db54f;
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
+  top: 11px;
+  left: 20px;
+  z-index: 1;
+  text-align: center;
+}
+
+header .button-brown {
   display: block;
   padding: 8px 34px;
   border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #756157;
   text-decoration: none;
   font-weight: 700;
 }
@@ -164,6 +293,21 @@ header .button {
   text-align: center;
   margin-bottom: 25px;
 }
+
+.advantages h3::before {
+  content: "";
+  position: absolute;
+  top: 86px;
+  left: 57px;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.advantages-item-blue h3::before {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .advantages img {
   height: 100%;
   object-fit: cover;
@@ -183,6 +327,7 @@ header .button {
   margin: 0 auto;
   margin-bottom: 62px;
   width: 175px;
+  position: relative;
 }
 
 .advantages-item p {
@@ -291,11 +436,10 @@ header .button {
   margin-bottom: 56px;
 }
 
-.hotel-search .button {
+.hotel-search .button-brown {
   font-size: 20px;
   line-height: 36px;
-  color: #ffffff;
-  background-color: #756157;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   padding: 8px 50px;
@@ -309,7 +453,6 @@ header .button {
 .subscribe {
   text-align: center;
   color: #ffffff;
-
   background-image: url(../images/subscribe-bg.jpg);
   background-color: #82b3d3;
   background-size: cover;
@@ -332,16 +475,15 @@ header .button {
   margin-bottom: 54px;
 }
 
-.subscribe .button {
+.subscribe .button-blue {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  background-color: #82b3d3;
-  color: #ffffff;
   border: none;
   padding: 8px 50px;
   border-radius: 0 4px 4px 0;
   max-width: 400px;
+  font-weight: 700;
 }
 
 .subscribe-form {
@@ -383,22 +525,71 @@ header .button {
   text-transform: uppercase;
 }
 
+.logo-footer-icon {
+  fill: #000;
+}
+
+.logo-footer-icon:hover {
+  fill: #756157;
+}
+
+.logo-footer-icon:focus {
+  fill: #756157;
+  outline: none;
+}
+
+.logo-footer-icon:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 .social-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  max-width: 300px;
   align-items: center;
 }
 
-.social-item {
-  padding: 10px;
+.social-item a {
+  display: flex;
+  width: 47px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
-.social-item img {
-  display: block;
+.social-icon {
+  fill: #83b3d3;
+}
+
+.social-icon:hover {
+  fill: #68a2ca;
+}
+
+.social-icon:focus {
+  fill: #68a2ca;
+}
+
+.social-icon:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.phonenumber {
+  color: #000000;
+}
+
+.phonenumber:hover {
+  color: #756157;
+}
+
+.phonenumber:focus {
+  color: #756157;
+  outline: none;
+}
+
+.phonenumber:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 /* Стили для страницы Каталога */
@@ -453,6 +644,42 @@ header .button {
   margin-bottom: 40px;
 }
 
+.breadcrumbs-link {
+  fill: #ffffff;
+  color: ffffff;
+}
+
+.breadcrumbs-link:hover {
+  fill: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  fill: #ffffff;
+  color: #ffffff;
+}
+
+.breadcrumbs-link:active {
+  fill: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 29px;
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-child):before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  right: -25px;
+  background-image: url(../images/breadcrumbs-arrow.svg);
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+}
+
 /* Стили для блока с поиском */
 .filter-legend {
   font-weight: 700;
@@ -466,22 +693,26 @@ header .button {
   line-height: 23px;
 }
 
-.submit-button {
+.filter .button-blue {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #82b3d3;
-  color: #ffffff;
   border: none;
+  padding: 8px 50px;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  font-weight: 700;
 }
 
-.reset-button {
+.filter .button-transparent {
   border: none;
-  background-color: inherit;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  padding: 8px 50px;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  font-weight: 700;
 }
 
 .infra {
@@ -538,12 +769,6 @@ header .button {
   align-self: flex-end;
 }
 
-.filter .button {
-  padding: 8px 50px;
-  border-radius: 4px;
-  margin-bottom: 32px;
-}
-
 .filter .button:last-child {
   margin-bottom: 0;
 }
@@ -592,14 +817,27 @@ header .button {
   gap: 8px;
 }
 
-.view-item button {
+.view-button {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   padding: 16px;
 }
 
-.view-item button.active {
+.view-button:hover {
+  border-color: #000000;
+}
+
+.view-button:focus {
+  border-color: #68a2ca;
+  outline: none;
+}
+
+.view-button:active {
+  border-color: #000000;
+}
+
+.view-button.active {
   border: 2px solid #000000;
 }
 
@@ -655,12 +893,6 @@ header .button {
   justify-self: flex-end;
 }
 
-.goods-more-button {
-  color: #ffffff;
-  background-color: #756157;
-  text-decoration: none;
-}
-
 .goods .button {
   font-size: 16px;
   line-height: 20px;
@@ -670,6 +902,8 @@ header .button {
   padding: 8px;
   text-align: center;
   word-break: break-all;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .goods-rating {
@@ -681,16 +915,6 @@ header .button {
   padding: 8px;
   text-align: center;
   word-break: break-all;
-}
-
-.goods-to-favorite {
-  background-color: #82b3d3;
-  color: #ffffff;
-}
-
-.goods-in-favorite {
-  background-color: #7db54f;
-  color: #ffffff;
 }
 
 .stars-list {
@@ -721,10 +945,8 @@ header .button {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #82b3d3;
   display: flex;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   justify-content: center;
   align-items: center;
