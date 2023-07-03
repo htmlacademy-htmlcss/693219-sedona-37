@@ -31,6 +31,11 @@ body {
   padding: 0;
 }
 
+.main-container {
+  margin: 0;
+  padding: 0;
+}
+
 .page-container {
   background: #ffffff;
   display: flex;
@@ -199,6 +204,34 @@ body {
   min-height: 22px;
 }
 
+.navigation-link.search {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-link.heart {
+  background-image: url("../images/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.navigation-link .likes {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 10px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #6c9e42;
+  top: 11px;
+  right: 4px;
+}
+
 .navigation-link {
   display: block;
   padding: 20px 16px;
@@ -210,6 +243,10 @@ body {
   position: relative;
 }
 
+.navigation-link:hover {
+  opacity: 70%;
+}
+
 .navigation-link.active {
   text-decoration: underline;
   text-decoration-color: #756257;
@@ -218,40 +255,30 @@ body {
   text-underline-position: under;
 }
 
-.likes {
-  position: relative;
+.navigation-user {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.likes::before {
-  content: "13";
-  position: absolute;
-  border-radius: 50%;
-  background-color: #7db54f;
-  color: #ffffff;
-  font-size: 10px;
-  line-height: 20px;
-  width: 20px;
-  height: 20px;
-  top: 11px;
-  left: 20px;
-  z-index: 1;
-  text-align: center;
+.navigation-user .navigation-link {
+  min-width: 44px;
+  min-height: 64px;
+  margin: 0;
+  padding: 0;
 }
 
-header .button-brown {
+.navigation-user .button-brown {
   display: block;
-  padding: 8px 34px;
+  padding: 8px;
+  min-width: 160px;
+  box-sizing: border-box;
+  text-align: center;
   border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
-}
-
-.main-container {
-  margin: 0;
-  padding: 0;
 }
 
 /* Стили для блока hero*/

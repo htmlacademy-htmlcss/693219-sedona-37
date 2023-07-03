@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="page-container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <a href="/" class="navigation-logo">
             <img src="images/logo.svg" width="140" height="70" alt="логотип" />
@@ -71,17 +71,17 @@
         </nav>
       </header>
 
-      <main class="main-container">
+      <main class="main-container" data-test="main">
         <section class="filter-content">
           <header class="inner-header">
             <h1>Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a href="/"></a>
+                <a href="/">
                   <svg
-                  class="breadcrumbs-link"
-                  aria-hidden="true"
-                  focusable="false"
+                    class="breadcrumbs-link"
+                    aria-hidden="true"
+                    focusable="false"
                     width="13"
                     height="13"
                     viewBox="0 0 13 13"
@@ -102,6 +102,7 @@
             </ul>
           </header>
           <form
+            data-test="filter"
             class="filter"
             action="https://echo.htmlacademy.ru/"
             method="get"
@@ -176,7 +177,7 @@
           </form>
         </section>
 
-        <section class="catalog">
+        <section class="catalog" data-test="catalog">
           <h2 class="visually-hidden">Результаты поиска</h2>
           <div class="header-catalog">
             <p class="catalog-find-text">Найдено гостиниц: 38</p>
@@ -433,7 +434,7 @@
           </ul>
         </section>
 
-        <article class="subscribe catalog-page">
+        <article class="subscribe catalog-page" data-test="subscribe">
           <h2>Подпишитесь на рассылку</h2>
           <p>
             Только полезная информация и никакого спама, честное бойскаутское!
@@ -455,7 +456,7 @@
         </article>
       </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <ul class="social-list">
           <li class="social-item">
             <a href="#">
