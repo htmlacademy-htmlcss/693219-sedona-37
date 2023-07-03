@@ -172,7 +172,7 @@ body {
   width: 140px;
   height: 64px;
   z-index: 1;
-  padding-right: 28px;
+  margin-right: 28px;
   display: block;
 }
 
@@ -289,7 +289,7 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom;
   padding-top: 51px;
-  padding-bottom: 182px;
+  padding-bottom: 82px;
 }
 
 .hero-img {
