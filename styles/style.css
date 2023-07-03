@@ -347,7 +347,8 @@ body {
 }
 
 .advantages-text {
-  width: 655px;
+  width: 700px;
+  text-align: center;
   margin: 0 auto;
   margin-bottom: 90px;
 }
@@ -427,7 +428,8 @@ body {
 }
 
 .services-text {
-  width: 490px;
+  width: 500px;
+  text-align: center;
   margin: 0 auto;
   margin-bottom: 64px;
 }
