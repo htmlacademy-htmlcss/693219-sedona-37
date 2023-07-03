@@ -528,6 +528,11 @@ body {
   height: 52px;
   border-radius: 4px 0 0 4px;
   background: #f2f2f2;
+  font-family: "PT Sans", sans-serif;
+
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 20px;
 }
 
 .subscribe.catalog-page {
@@ -690,6 +695,14 @@ body {
   align-self: center;
 }
 
+.home:hover {
+  opacity: 60%;
+}
+
+.home:active {
+  opacity: 30%;
+}
+
 .breadcrumbs-link {
   fill: #ffffff;
   color: ffffff;
@@ -761,6 +774,7 @@ body {
   margin-bottom: 32px;
   font-weight: 700;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .infra {
@@ -846,6 +860,7 @@ body {
 }
 
 .catalog-sort-select {
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -854,6 +869,27 @@ body {
   width: 292px;
   height: 49px;
   cursor: pointer;
+  padding-left: 20px;
+  position: relative;
+  display: inline-block;
+  padding-right: 25px;
+
+  appearance: none;
+  background: url(../images/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.catalog-sort-select:hover {
+  border: 2px solid #68a2ca;
+}
+
+.catalog-sort-select:focus {
+  border: 2px solid #68a2ca;
+}
+
+.catalog-sort-select:disabled {
+  opacity: 30%;
 }
 
 .view-list {
@@ -867,11 +903,28 @@ body {
 }
 
 .view-button {
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   padding: 16px;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.view-button.table {
+  background-image: url(../images/table-icon.svg);
+}
+
+.view-button.goods-icon {
+  background-image: url(../images/goods-icon.svg);
+}
+
+.view-button.list-icon {
+  background-image: url(../images/list-icon.svg);
 }
 
 .view-button:hover {
@@ -955,6 +1008,7 @@ body {
   text-decoration: none;
   font-weight: 700;
   cursor: pointer;
+  font-family: "PT Sans", sans-serif;
 }
 
 .goods-rating {
@@ -974,10 +1028,16 @@ body {
   padding: 0;
   display: flex;
   align-items: center;
+  gap: 6px;
 }
 
-.stars-item img {
+.stars-item {
   display: block;
+  width: 18px;
+  height: 17px;
+  background-image: url(../images/star.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 0;
 }
 
