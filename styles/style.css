@@ -299,7 +299,7 @@ body {
 
 /* Стили для блока advantages*/
 .advantages {
-  padding-top: 56px;
+  padding-top: 69px;
 }
 
 .advantages-list {
@@ -311,8 +311,10 @@ body {
 }
 
 .advantages h2 {
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
+  font-weight: 700px;
   text-transform: uppercase;
   color: black;
   margin: 0 auto;
@@ -341,7 +343,7 @@ body {
 }
 
 .advantages-text {
-  width: 651px;
+  width: 655px;
   margin: 0 auto;
   margin-bottom: 90px;
 }
