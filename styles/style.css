@@ -326,8 +326,9 @@ body {
 .advantages h3::before {
   content: "";
   position: absolute;
-  top: 86px;
-  left: 57px;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -513,6 +514,7 @@ body {
   border-radius: 0 4px 4px 0;
   max-width: 400px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .subscribe-form {
@@ -673,6 +675,21 @@ body {
   margin-bottom: 40px;
 }
 
+.breadcrumbs-item {
+  display: flex;
+  justify-content: center;
+}
+
+.home {
+  display: block;
+  width: 13px;
+  height: 15px;
+  background-image: url(../images/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
+}
+
 .breadcrumbs-link {
   fill: #ffffff;
   color: ffffff;
@@ -732,6 +749,7 @@ body {
   border-radius: 4px;
   margin-bottom: 32px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .filter .button-transparent {
@@ -742,6 +760,7 @@ body {
   border-radius: 4px;
   margin-bottom: 32px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .infra {
@@ -834,6 +853,7 @@ body {
   border-radius: 4px;
   width: 292px;
   height: 49px;
+  cursor: pointer;
 }
 
 .view-list {
@@ -851,6 +871,7 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   padding: 16px;
+  cursor: pointer;
 }
 
 .view-button:hover {
@@ -933,6 +954,7 @@ body {
   word-break: break-all;
   text-decoration: none;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .goods-rating {
