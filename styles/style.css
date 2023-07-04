@@ -364,8 +364,12 @@ body {
 }
 
 .advantages-item-container {
-  padding: 102px 85px;
+  padding: 112px 85px;
   text-align: center;
+}
+
+.advantages-item-blue .advantages-item-container {
+  padding: 102px 85px;
 }
 
 .advantages-item-blue {
@@ -403,6 +407,10 @@ body {
 .services-item {
   width: 400px;
   padding: 81px 85px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
 }
 
 .services h2 {
@@ -428,6 +436,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .services-item p {
@@ -508,7 +517,8 @@ body {
   border: none;
   padding: 8px 50px;
   border-radius: 0 4px 4px 0;
-  max-width: 400px;
+  min-width: 232px;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   cursor: pointer;
 }
@@ -516,16 +526,17 @@ body {
 .subscribe-form {
   display: flex;
   justify-content: center;
+  width: 684px;
+  margin: 0 auto;
 }
 
 .subscribe-form input {
   border: none;
   width: 452px;
-  height: 52px;
   border-radius: 4px 0 0 4px;
   background: #f2f2f2;
   font-family: "PT Sans", sans-serif;
-
+  box-sizing: border-box;
   font-size: 18px;
   line-height: 24px;
   padding-left: 20px;
@@ -683,8 +694,8 @@ body {
 
 .home {
   display: block;
-  width: 13px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background-image: url(../images/home.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -720,7 +731,7 @@ body {
 }
 
 .breadcrumbs-item:not(:last-child) {
-  margin-right: 29px;
+  margin-right: 19px;
   position: relative;
 }
 
@@ -728,7 +739,7 @@ body {
   position: absolute;
   content: "";
   top: 5px;
-  right: -25px;
+  right: -22px;
   background-image: url(../images/breadcrumbs-arrow.svg);
   background-repeat: no-repeat;
   width: 10px;
@@ -886,7 +897,7 @@ input[type="radio"]:checked ~ .control-mark::before {
   box-sizing: border-box;
   appearance: none;
   position: relative;
-  margin-bottom: 34px;
+  margin-bottom: 40px;
 }
 
 .price input::-webkit-outer-spin-button,
@@ -924,8 +935,8 @@ input[type="radio"]:checked ~ .control-mark::before {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-bottom: 16px;
   width: 287px;
+  margin-bottom: 10px;
   background-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1176,6 +1187,7 @@ p.goods-rating {
   list-style: none;
   display: flex;
   margin: 0 auto;
+  padding: 0;
   width: 1060px;
   gap: 8px;
 }
