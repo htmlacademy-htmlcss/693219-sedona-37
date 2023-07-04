@@ -468,8 +468,9 @@ body {
 }
 
 .hotel-search p {
-  margin-bottom: 56px;
   width: 600px;
+  margin: 0 auto;
+  margin-bottom: 56px;
 }
 
 .hotel-search .button-brown {
@@ -756,6 +757,59 @@ body {
 .filter-label {
   font-size: 18px;
   line-height: 23px;
+  padding-left: 36px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.filter-label:hover {
+  opacity: 60%;
+}
+
+.filter-label:focus-within .control-mark {
+  outline: 3px solid #83b3d3;
+}
+
+.filter-label:disabled {
+  opacity: 30%;
+}
+.control-mark {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+}
+
+input[type="checkbox"] ~ .control-mark {
+  border-radius: 4px;
+}
+
+input[type="checkbox"]:checked ~ .control-mark::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  background-image: url(../images/check.svg);
+}
+
+input[type="radio"] ~ .control-mark {
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked ~ .control-mark::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
 }
 
 .filter .button-blue {
