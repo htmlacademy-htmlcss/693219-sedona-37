@@ -290,5 +290,80 @@
         </a>
       </footer>
     </div>
+
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <h2 class="modal-header">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+
+        <form
+          class="modal-form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <label class="modal-form-date-from"
+            ><span class="modal-form-date-text">Дата заезда:</span
+            ><input
+              class="modal-form-date-input"
+              type="text"
+              value="27 апреля 2020"
+              name="date-from"
+            />
+            <span class="modal-text-allert warning"
+              >Мы не можем отправить вас в прошлое.</span
+            ></label
+          >
+
+          <label class="modal-form-date-to"
+            ><span class="modal-form-date-text">Дата выезда:</span
+            ><input
+              class="modal-form-date-input"
+              type="text"
+              value="1 сентября 2023"
+              name="date-to"
+            />
+            <span class="modal-text-allert"
+              >На эти даты есть свободные номера. Пока есть.</span
+            ></label
+          >
+
+          <label class="modal-form-adult"
+            ><span class="modal-form-date-text">Взрослые:</span>
+            <button class="count-button minus"></button>
+            <input
+              class="modal-form-count-input"
+              type="number"
+              value="2"
+              name="adult"
+              max="10"
+              min="0"
+            />
+            <button class="count-button plus"></button>
+          </label>
+
+          <label class="modal-form-children"
+            ><span class="modal-form-date-text">Дети:</span>
+            <div class="info"></div>
+            <button class="count-button minus"></button>
+
+            <input
+              class="modal-form-count-input"
+              type="number"
+              value="2"
+              name="children"
+              max="10"
+              min="0"
+            />
+            <button class="count-button plus"></button>
+          </label>
+
+          <button class="button-blue modal-form-button" type="submit">
+            Найти
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
