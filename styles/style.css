@@ -1353,6 +1353,12 @@ p.goods-rating {
   width: 40px;
   height: 48px;
   cursor: pointer;
+  padding: -20px;
+}
+
+.count-button:focus,
+.count-button:hover {
+  /* outline: none; */
 }
 
 .count-button.plus {
@@ -1380,9 +1386,12 @@ p.goods-rating {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  border: none;
+  outline: none;
 }
 
-.modal-form-children .info:hover:after {
+.modal-form-children .info:hover:before,
+.modal-form-children .info:focus:before {
   content: "";
   position: absolute;
   background-image: url(../images/tooltip.svg);
@@ -1394,15 +1403,15 @@ p.goods-rating {
   left: 50%;
   transform: translateX(-50%);
 }
-.modal-form-children .info:hover:before {
+
+.info-popup {
+  display: none;
   position: absolute;
-  content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
   font-family: PT Sans;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   width: 216px;
-  height: 110px;
   background-color: #333333;
   color: #fff;
   border-radius: 10px;
@@ -1410,6 +1419,12 @@ p.goods-rating {
   top: 41px;
   left: 50%;
   transform: translateX(-50%);
+  align-items: center;
+}
+
+.info:focus .info-popup,
+.info:hover .info-popup {
+  display: flex;
 }
 
 .modal-form-count-input::-webkit-inner-spin-button,
