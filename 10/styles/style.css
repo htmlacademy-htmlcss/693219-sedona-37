@@ -233,6 +233,8 @@ body {
   text-decoration: none;
   color: black;
   position: relative;
+  word-wrap: break-word;
+  max-width: 200px;
 }
 
 .navigation-link:hover {
@@ -271,6 +273,8 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
+  max-width: 190px;
+  word-wrap: break-word;
 }
 
 /* Стили для блока hero*/
@@ -287,6 +291,8 @@ body {
 .hero-img {
   display: block;
   margin: 0 auto;
+  object-fit: contain;
+  max-width: 500px;
 }
 
 /* Стили для блока advantages*/
@@ -313,6 +319,7 @@ body {
   width: 620px;
   text-align: center;
   margin-bottom: 25px;
+  word-wrap: break-word;
 }
 
 .advantages h3::before {
@@ -340,6 +347,7 @@ body {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 90px;
+  word-wrap: break-word;
 }
 
 .advantages-item h3 {
@@ -351,12 +359,14 @@ body {
   margin-bottom: 62px;
   width: 175px;
   position: relative;
+  word-wrap: break-word;
 }
 
 .advantages-item p {
   font-size: 18px;
   line-height: 21px;
   margin: 0;
+  word-wrap: break-word;
 }
 
 .advantages-item {
@@ -461,7 +471,8 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: black;
-  margin: 0;
+  width: 592px;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -500,7 +511,8 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0;
+  width: 592px;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -897,7 +909,25 @@ input[type="radio"]:checked ~ .control-mark::before {
   box-sizing: border-box;
   appearance: none;
   position: relative;
+}
+
+.price-lable {
+  display: flex;
+  position: relative;
   margin-bottom: 40px;
+}
+
+.price-lable span {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  color: #000000;
+  font-size: 18px;
+  right: 20px;
+  font-weight: 400;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 30%;
 }
 
 .price input::-webkit-outer-spin-button,
@@ -1214,4 +1244,231 @@ p.goods-rating {
 .pagination-item.none a {
   color: #000000;
   background: none;
+}
+
+/* Модальное окно */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  z-index: 2;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  background-color: #ffffff;
+  width: 577px;
+  border-radius: 30px;
+  padding: 64px 70px;
+}
+
+.modal-header {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.modal-form input {
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.modal-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px 88px;
+}
+
+.modal-form-date-from {
+  grid-column: 2 span;
+}
+
+.modal-form-date-to {
+  grid-column: 2 span;
+}
+
+.modal-form label {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.modal-form-date-input {
+  width: 440px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-image: url(../images/date.svg);
+  background-repeat: no-repeat;
+  background-position: right 22px top 50%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.modal-form-date-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  max-width: 135px;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.modal-text-allert {
+  margin-left: 157px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  position: absolute;
+  top: 100%;
+}
+
+.modal-text-allert.warning {
+  color: #ff5757;
+}
+
+.modal-form-count-input {
+  width: 31px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+.count-button {
+  border: none;
+  width: 40px;
+  height: 48px;
+  cursor: pointer;
+  padding: -20px;
+}
+
+.count-button:focus,
+.count-button:hover {
+  /* outline: none; */
+}
+
+.count-button.plus {
+  background-image: url(../images/plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0 4px 4px 0;
+}
+
+.count-button.minus {
+  background-image: url(../images/minus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px 0 0 4px;
+}
+
+.modal-form-children .info {
+  width: 26px;
+  height: 26px;
+  background-color: #83b3d3;
+  border-radius: 50%;
+  align-self: center;
+  margin-right: 46px;
+  background-image: url(../images/info.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  border: none;
+  outline: none;
+}
+
+.modal-form-children .info:hover:before,
+.modal-form-children .info:focus:before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/tooltip.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 19px;
+  height: 9px;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.info-popup {
+  display: none;
+  position: absolute;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 216px;
+  background-color: #333333;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px 18px 18px 22px;
+  top: 41px;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+}
+
+.info:focus .info-popup,
+.info:hover .info-popup {
+  display: flex;
+}
+
+.modal-form-count-input::-webkit-inner-spin-button,
+.modal-form-count-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modal-form-button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  grid-column: 2 span;
+  padding: 18px 77px 18px 77px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal-close-button {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 52px;
+  top: 64px;
+  background-image: url(../images/close-button.svg);
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  background-position: center;
+}
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.modal-close-button:disabled {
+  opacity: 60%;
 }
