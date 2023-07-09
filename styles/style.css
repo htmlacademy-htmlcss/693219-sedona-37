@@ -986,10 +986,6 @@ input[type="radio"]:checked ~ .control-mark::before {
   cursor: pointer;
 }
 
-.range-toggle:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
 .range-toggle:active,
 .range-toggle:focus {
   outline: 3px solid #83b3d3;
