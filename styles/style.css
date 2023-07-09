@@ -588,7 +588,7 @@ body {
   fill: #756157;
 }
 
-.logo-footer-icon:focus {
+.logo-footer-icon:focus-within {
   fill: #756157;
   outline: none;
 }
