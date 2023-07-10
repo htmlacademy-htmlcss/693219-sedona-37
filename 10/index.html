@@ -292,7 +292,7 @@
       </footer>
     </div>
 
-    <div class="modal-container visually-hidden">
+    <div class="modal-container" data-test="modal">
       <div class="modal modal-auth">
         <h2 class="modal-header">Поиск гостиницы в Седоне</h2>
         <button class="modal-close-button">
@@ -332,16 +332,19 @@
 
           <label class="modal-form-adult"
             ><span class="modal-form-date-text">Взрослые:</span>
-            <button class="count-button minus"></button>
-            <input
-              class="modal-form-count-input"
-              type="number"
-              value="2"
-              name="adult"
-              max="10"
-              min="0"
-            />
-            <button class="count-button plus"></button>
+            <div class="modal-form-count-input-container">
+              <button class="count-minus"></button>
+
+              <input
+                class="modal-form-count-input"
+                type="number"
+                value="2"
+                name="adult"
+                max="10"
+                min="0"
+              />
+              <button class="count-plus"></button>
+            </div>
           </label>
 
           <label class="modal-form-children"
@@ -352,17 +355,18 @@
                 от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span
               >
             </button>
-            <button class="count-button minus"></button>
-
-            <input
-              class="modal-form-count-input"
-              type="number"
-              value="2"
-              name="children"
-              max="10"
-              min="0"
-            />
-            <button class="count-button plus"></button>
+            <div class="modal-form-count-input-container">
+              <button class="count-minus"></button>
+              <input
+                class="modal-form-count-input"
+                type="number"
+                value="2"
+                name="children"
+                max="10"
+                min="0"
+              />
+              <button class="count-plus"></button>
+            </div>
           </label>
 
           <button class="button-blue modal-form-button" type="submit">

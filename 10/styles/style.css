@@ -588,7 +588,7 @@ body {
   fill: #756157;
 }
 
-.logo-footer-icon:focus {
+.logo-footer-icon:focus-within {
   fill: #756157;
   outline: none;
 }
@@ -1340,35 +1340,59 @@ p.goods-rating {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 20px;
   text-align: center;
+  padding: 14px 40px;
+  border-radius: 4px;
 }
 
-.count-button {
-  border: none;
-  width: 40px;
-  height: 48px;
-  cursor: pointer;
-  padding: -20px;
+.modal-form-count-input-container {
+  position: relative;
 }
 
-.count-button:focus,
-.count-button:hover {
-  /* outline: none; */
-}
-
-.count-button.plus {
-  background-image: url(../images/plus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 0 4px 4px 0;
-}
-
-.count-button.minus {
+.count-minus {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  left: 10px;
   background-image: url(../images/minus.svg);
+  opacity: 30%;
+  border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.count-plus {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  right: 10px;
+  background-image: url(../images/plus.svg);
+  opacity: 30%;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.count-minus:hover,
+.count-plus:hover {
+  opacity: 1;
+}
+
+.count-minus:focus,
+.count-plus:focus {
+  opacity: 1;
+  outline: 3px solid #82b3d3;
+}
+
+.count-minus:active,
+.count-plus:active {
+  opacity: 30%;
+  outline: none;
 }
 
 .modal-form-children .info {
