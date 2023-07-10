@@ -1453,6 +1453,13 @@ p.goods-rating {
   margin: 0;
 }
 
+.modal-form-count-input,
+.modal-form-count-input:hover,
+.modal-form-count-input:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
 .modal-form-button {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
