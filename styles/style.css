@@ -1292,6 +1292,10 @@ p.goods-rating {
   grid-column: 2 span;
 }
 
+.modal-form-count {
+  display: flex;
+}
+
 .modal-form label {
   display: flex;
   flex-wrap: wrap;
@@ -1395,7 +1399,7 @@ p.goods-rating {
   outline: none;
 }
 
-.modal-form-children .info {
+.modal-form-count .info {
   width: 26px;
   height: 26px;
   background-color: #83b3d3;
@@ -1410,8 +1414,8 @@ p.goods-rating {
   outline: none;
 }
 
-.modal-form-children .info:hover:before,
-.modal-form-children .info:focus:before {
+.modal-form-count .info:hover:before,
+.modal-form-count .info:focus:before {
   content: "";
   position: absolute;
   background-image: url(../images/tooltip.svg);
