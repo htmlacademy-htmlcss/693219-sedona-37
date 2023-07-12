@@ -490,7 +490,7 @@ body {
   text-decoration: none;
   padding: 8px 50px;
   border-radius: 4px;
-  max-width: 500px;
+  width: 376px;
   display: inline-block;
   margin: 0 auto;
 }
@@ -529,7 +529,7 @@ body {
   border: none;
   padding: 8px 50px;
   border-radius: 0 4px 4px 0;
-  min-width: 232px;
+  width: 232px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   cursor: pointer;
@@ -915,6 +915,7 @@ input[type="radio"]:checked ~ .control-mark::before {
   display: flex;
   position: relative;
   margin-bottom: 40px;
+  align-self: flex-start;
 }
 
 .price-lable span {
@@ -1023,6 +1024,7 @@ input[type="radio"]:checked ~ .control-mark::before {
   color: black;
   margin: 0;
   margin-right: 200px;
+  width: 338px;
 }
 
 .catalog-sort-select {
@@ -1271,6 +1273,7 @@ p.goods-rating {
   text-align: left;
   margin: 0;
   margin-bottom: 64px;
+  text-transform: uppercase;
 }
 
 .modal-form input {
@@ -1304,7 +1307,7 @@ p.goods-rating {
 
 .modal-form-date-input {
   width: 440px;
-  padding: 12px 20px;
+  padding: 12px 45px 20px 20px;
   border-radius: 4px;
   box-sizing: border-box;
   background-image: url(../images/date.svg);
@@ -1366,6 +1369,7 @@ p.goods-rating {
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+  cursor: pointer;
 }
 
 .count-plus {
@@ -1380,6 +1384,7 @@ p.goods-rating {
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+  cursor: pointer;
 }
 
 .count-minus:hover,
