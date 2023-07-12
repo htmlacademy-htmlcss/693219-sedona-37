@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="images/favicon.png" />
     <base href="https://htmlacademy-htmlcss.github.io/693219-sedona-37/10/">
 </head>
   <body>
@@ -330,11 +331,10 @@
             ></label
           >
 
-          <label class="modal-form-adult"
-            ><span class="modal-form-date-text">Взрослые:</span>
+          <div class="modal-form-count">
+            <label class="modal-form-date-text">Взрослые:</label>
             <div class="modal-form-count-input-container">
               <button class="count-minus"></button>
-
               <input
                 class="modal-form-count-input"
                 type="number"
@@ -345,11 +345,11 @@
               />
               <button class="count-plus"></button>
             </div>
-          </label>
+          </div>
 
-          <label class="modal-form-children"
-            ><span class="modal-form-date-text">Дети:</span>
-            <button class="info">
+          <div class="modal-form-count">
+            <label class="modal-form-date-text">Дети:</label>
+            <button class="info" type="button">
               <span class="info-popup"
                 >Укажите количество детей, которые будут с вами, возраст которых
                 от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span
@@ -367,7 +367,7 @@
               />
               <button class="count-plus"></button>
             </div>
-          </label>
+          </div>
 
           <button class="button-blue modal-form-button" type="submit">
             Найти
