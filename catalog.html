@@ -4,17 +4,18 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="images/favicon.png" />
   </head>
   <body>
     <div class="page-container">
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <a href="/" class="navigation-logo">
+          <a href="/index.html" class="navigation-logo">
             <img src="images/logo.svg" width="140" height="70" alt="логотип" />
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a href="/" class="navigation-link">Главная</a>
+              <a href="/index.html" class="navigation-link">Главная</a>
             </li>
             <li class="navigation-item">
               <a href="#" class="navigation-link">О Седоне</a>
@@ -50,7 +51,7 @@
             <h1>Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a href="/" class="home"> </a>
+                <a href="/index.html" class="home"> </a>
               </li>
               <li class="breadcrumbs-item">
                 <a href="catalog.html" class="breadcrumbs-link">Гостиницы</a>
@@ -67,18 +68,30 @@
               <legend class="filter-legend">Инфраструктура:</legend>
 
               <label class="filter-label"
-                ><input type="checkbox" name="Бассейн" checked />Бассейн</label
-              >
+                ><input
+                  type="checkbox"
+                  name="Бассейн"
+                  class="visually-hidden"
+                  checked
+                />
+                <span class="control-mark"></span>
+                <span class="control-lable">Бассейн</span>
+              </label>
               <label class="filter-label"
                 ><input
                   type="checkbox"
                   name="Парковка"
+                  class="visually-hidden"
                   checked
-                />Парковка</label
-              >
+                />
+                <span class="control-mark"></span>
+                <span class="control-lable">Парковка</span>
+              </label>
               <label class="filter-label"
-                ><input type="checkbox" name="Wi-Fi" />Wi-Fi</label
-              >
+                ><input type="checkbox" class="visually-hidden" name="Wi-Fi" />
+                <span class="control-mark"></span>
+                <span class="control-lable">Wi-Fi</span>
+              </label>
             </fieldset>
 
             <fieldset class="infra">
@@ -89,41 +102,76 @@
                   type="radio"
                   name="Жилье"
                   value="hotel"
+                  class="visually-hidden"
                   checked
-                />Гостиница</label
-              >
+                />
+                <span class="control-mark"></span>
+                <span class="control-lable">Гостиница</span>
+              </label>
 
               <label class="filter-label"
-                ><input type="radio" name="Жилье" value="motel" />Мотель</label
-              >
+                ><input
+                  type="radio"
+                  name="Жилье"
+                  class="visually-hidden"
+                  value="motel"
+                />
+                <span class="control-mark"></span>
+                <span class="control-lable">Мотель</span>
+              </label>
 
               <label class="filter-label">
                 <input
                   type="radio"
                   name="Жилье"
+                  class="visually-hidden"
                   value="apartments"
-                />Апартаменты</label
-              >
+                />
+                <span class="control-mark"></span>
+                <span class="control-lable">Апартаменты</span>
+              </label>
             </fieldset>
 
             <fieldset class="price">
               <legend class="filter-legend">Стоимость, ₽:</legend>
-              <input
-                type="number"
-                name="minPrice"
-                id="minPrice"
-                value="0"
-                min="0"
-                max="10000"
-              />
-              <input
-                type="number"
-                name="maxPrice"
-                id="maxPrice"
-                value="9000"
-                min="0"
-                max="10000"
-              />
+              <label class="price-lable">
+                <input
+                  type="number"
+                  name="minPrice"
+                  id="minPrice"
+                  value="0"
+                  min="0"
+                  max="10000"
+                />
+                <span>от</span>
+              </label>
+
+              <label class="price-lable">
+                <input
+                  type="number"
+                  name="maxPrice"
+                  id="maxPrice"
+                  value="9000"
+                  min="0"
+                  max="10000"
+                />
+                <span>до</span>
+              </label>
+
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0; width: 226px">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden"
+                      >Изменить минимальную цену.</span
+                    >
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden"
+                      >Изменить максимальную цену.</span
+                    >
+                  </button>
+                </div>
+              </div>
             </fieldset>
 
             <div class="buttons">
@@ -144,13 +192,19 @@
 
             <ul class="view-list">
               <li class="view-item">
-                <button class="view-button active table" type="button"></button>
+                <button class="view-button active table" type="button">
+                  <span class="visually-hidden"></span>
+                </button>
               </li>
               <li class="view-item">
-                <button class="view-button goods-icon" type="button"></button>
+                <button class="view-button goods-icon" type="button">
+                  <span class="visually-hidden"></span>
+                </button>
               </li>
               <li class="view-item">
-                <button class="view-button list-icon" type="button"></button>
+                <button class="view-button list-icon" type="button">
+                  <span class="visually-hidden"></span>
+                </button>
               </li>
             </ul>
           </div>
@@ -209,7 +263,7 @@
             </li>
 
             <li class="goods-item">
-              <h3>Amara Resort & Spa</h3>
+              <h3>Desert Quail Inn</h3>
               <img
                 src="images/hotel-3.jpg"
                 width="300"

@@ -4,17 +4,18 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="images/favicon.png" />
   </head>
   <body>
     <div class="page-container">
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <a href="/" class="navigation-logo">
+          <a href="/index.html" class="navigation-logo">
             <img src="images/logo.svg" width="140" height="70" alt="логотип" />
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a href="/" class="navigation-link active">Главная</a>
+              <a href="/index.html" class="navigation-link active">Главная</a>
             </li>
             <li class="navigation-item">
               <a href="#" class="navigation-link">О Седоне</a>
@@ -120,7 +121,9 @@
                 alt="Дом"
               />
               <h3>Жильё</h3>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p>
+                Рекомендуем пожить<br />в настоящем мотеле,<br />всё как в кино!
+              </p>
             </li>
             <li class="services-item">
               <img
@@ -131,7 +134,7 @@
               />
               <h3>Еда</h3>
               <p>
-                Всегда заказывайте топовый фирменный бургер, вы не
+                Всегда заказывайте<br />топовый фирменный бургер,<br />вы не
                 разочаруетесь!
               </p>
             </li>
@@ -144,7 +147,8 @@
               />
               <h3>Сувениры</h3>
               <p>
-                Не только китайского, но и настоящего местного производства!
+                Не только китайского,<br />но и настоящего местного
+                производства!
               </p>
             </li>
           </ul>
@@ -286,6 +290,89 @@
           </svg>
         </a>
       </footer>
+    </div>
+
+    <div class="modal-container" data-test="modal">
+      <div class="modal modal-auth">
+        <h2 class="modal-header">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+
+        <form
+          class="modal-form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <label class="modal-form-date-from"
+            ><span class="modal-form-date-text">Дата заезда:</span
+            ><input
+              class="modal-form-date-input"
+              type="text"
+              value="27 апреля 2020"
+              name="date-from"
+            />
+            <span class="modal-text-allert warning"
+              >Мы не можем отправить вас в прошлое.</span
+            ></label
+          >
+
+          <label class="modal-form-date-to"
+            ><span class="modal-form-date-text">Дата выезда:</span
+            ><input
+              class="modal-form-date-input"
+              type="text"
+              value="1 сентября 2023"
+              name="date-to"
+            />
+            <span class="modal-text-allert"
+              >На эти даты есть свободные номера. Пока есть.</span
+            ></label
+          >
+
+          <div class="modal-form-count">
+            <label class="modal-form-date-text">Взрослые:</label>
+            <div class="modal-form-count-input-container">
+              <button class="count-minus"></button>
+              <input
+                class="modal-form-count-input"
+                type="number"
+                value="2"
+                name="adult"
+                max="10"
+                min="0"
+              />
+              <button class="count-plus"></button>
+            </div>
+          </div>
+
+          <div class="modal-form-count">
+            <label class="modal-form-date-text">Дети:</label>
+            <button class="info" type="button">
+              <span class="info-popup"
+                >Укажите количество детей, которые будут с вами, возраст которых
+                от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span
+              >
+            </button>
+            <div class="modal-form-count-input-container">
+              <button class="count-minus"></button>
+              <input
+                class="modal-form-count-input"
+                type="number"
+                value="2"
+                name="children"
+                max="10"
+                min="0"
+              />
+              <button class="count-plus"></button>
+            </div>
+          </div>
+
+          <button class="button-blue modal-form-button" type="submit">
+            Найти
+          </button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
