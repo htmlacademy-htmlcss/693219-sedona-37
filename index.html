@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css" >
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="images/favicon.png" />
+    <link rel="icon" href="images/favicon.png" >
   </head>
   <body>
     <div class="page-container">
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <a href="/index.html" class="navigation-logo">
-            <img src="images/logo.svg" width="140" height="70" alt="логотип" />
+          <a href="index.html" class="navigation-logo">
+            <img src="images/logo.svg" width="140" height="70" alt="логотип.">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a href="/index.html" class="navigation-link active">Главная</a>
+              <a href="index.html" class="navigation-link active">Главная</a>
             </li>
             <li class="navigation-item">
               <a href="#" class="navigation-link">О Седоне</a>
@@ -52,7 +52,7 @@
             width="458"
             height="352"
             alt="Welcome to the gorgeous Sedona. Because the Grand Canyon lucks!"
-          />
+          >
         </section>
 
         <section class="advantages" data-test="advantages">
@@ -70,8 +70,8 @@
                 src="images/photo-1.jpg"
                 width="800"
                 height="385"
-                alt="Зеленый дом с флагом"
-              />
+                alt="Зеленый дом с флагом."
+              >
             </li>
             <li class="advantages-item advantages-item-light-grey">
               <div class="advantages-item-container">
@@ -96,10 +96,10 @@
                 src="images/photo-2.jpg"
                 width="800"
                 height="385"
-                alt="Мост дьявола"
-              />
+                alt="Мост дьявола."
+              >
               <div class="advantages-item-container">
-                <h3>Там есть<br />мост дьявола</h3>
+                <h3>Там есть<br>мост дьявола</h3>
                 <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
@@ -118,11 +118,11 @@
                 src="images/advantage-home.svg"
                 width="75"
                 height="72"
-                alt="Дом"
-              />
+                alt="Дом."
+              >
               <h3>Жильё</h3>
               <p>
-                Рекомендуем пожить<br />в настоящем мотеле,<br />всё как в кино!
+                Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!
               </p>
             </li>
             <li class="services-item">
@@ -130,11 +130,11 @@
                 src="images/advantage-food.svg"
                 width="75"
                 height="72"
-                alt="Бургер"
-              />
+                alt="Бургер."
+              >
               <h3>Еда</h3>
               <p>
-                Всегда заказывайте<br />топовый фирменный бургер,<br />вы не
+                Всегда заказывайте<br>топовый фирменный бургер,<br>вы не
                 разочаруетесь!
               </p>
             </li>
@@ -143,11 +143,11 @@
                 src="images/advantage-gift.svg"
                 width="75"
                 height="72"
-                alt="Подарок"
-              />
+                alt="Подарок."
+              >
               <h3>Сувениры</h3>
               <p>
-                Не только китайского,<br />но и настоящего местного
+                Не только китайского,<br>но и настоящего местного
                 производства!
               </p>
             </li>
@@ -157,7 +157,7 @@
         <section class="hotel-search" data-test="search">
           <h2>Заинтересовались?</h2>
           <p>
-            Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие
+            Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
           <a href="catalog.html" class="button-brown"
@@ -175,13 +175,16 @@
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
+            <label class="visually-hidden" for="appointment-date"
+              >Введите emal
+            </label>
             <input
               type="email"
               id="appointment-date"
               placeholder="Ваш e-mail"
               name="e-mail"
               required
-            />
+            >
             <button class="button-blue" type="submit">Подписаться</button>
           </form>
         </article>
@@ -191,6 +194,7 @@
         <ul class="social-list">
           <li class="social-item">
             <a href="#">
+              <span class="visually-hidden">Вконтакте</span>
               <svg
                 class="social-icon"
                 aria-hidden="true"
@@ -209,6 +213,7 @@
           </li>
           <li class="social-item">
             <a href="#">
+              <span class="visually-hidden">Телеграмм</span>
               <svg
                 class="social-icon"
                 aria-hidden="true"
@@ -226,6 +231,7 @@
           </li>
           <li class="social-item">
             <a href="#">
+              <span class="visually-hidden">Youtube</span>
               <svg
                 class="social-icon"
                 aria-hidden="true"
@@ -244,6 +250,7 @@
         </ul>
         <a href="tel:+78128121212" class="phonenumber">+7 (812) 812-12-12</a>
         <a href="https://htmlacademy.ru">
+          <span class="visually-hidden">Логотип htmlacademy</span>
           <svg
             class="logo-footer-icon"
             aria-hidden="true"
@@ -292,7 +299,7 @@
       </footer>
     </div>
 
-    <div class="modal-container" data-test="modal">
+    <div class="modal-container visually-hidden" data-test="modal">
       <div class="modal modal-auth">
         <h2 class="modal-header">Поиск гостиницы в Седоне</h2>
         <button type="button" class="modal-close-button">
@@ -305,33 +312,33 @@
           method="post"
         >
           <label class="modal-form-date-from"
-            ><span class="modal-form-date-text">Дата заезда:</span
+            ><span class="modal-form-date-text">Дата Заезда:</span
             ><input
               class="modal-form-date-input"
               type="text"
               value="27 апреля 2020"
               name="date-from"
-            />
+            >
             <span class="modal-text-allert warning"
               >Мы не можем отправить вас в прошлое.</span
             ></label
           >
 
           <label class="modal-form-date-to"
-            ><span class="modal-form-date-text">Дата выезда:</span
+            ><span class="modal-form-date-text">Дата Выезда:</span
             ><input
               class="modal-form-date-input"
               type="text"
               value="1 сентября 2023"
               name="date-to"
-            />
+            >
             <span class="modal-text-allert"
               >На эти даты есть свободные номера. Пока есть.</span
             ></label
           >
 
           <div class="modal-form-count">
-            <label class="modal-form-date-text">Взрослые:</label>
+            <label class="modal-form-date-text" for="adult">Взрослые:</label>
             <div class="modal-form-count-input-container">
               <button type="button" class="count-minus"></button>
               <input
@@ -339,15 +346,16 @@
                 type="number"
                 value="2"
                 name="adult"
+                id="adult"
                 max="10"
                 min="0"
-              />
+              >
               <button type="button" class="count-plus"></button>
             </div>
           </div>
 
           <div class="modal-form-count">
-            <label class="modal-form-date-text">Дети:</label>
+            <label class="modal-form-date-text" for="child">Дети:</label>
             <button class="info" type="button">
               <span class="info-popup"
                 >Укажите количество детей, которые будут с вами, возраст которых
@@ -358,12 +366,13 @@
               <button type="button" class="count-minus"></button>
               <input
                 class="modal-form-count-input"
+                id="child"
                 type="number"
                 value="2"
                 name="children"
                 max="10"
                 min="0"
-              />
+              >
               <button type="button" class="count-plus"></button>
             </div>
           </div>
