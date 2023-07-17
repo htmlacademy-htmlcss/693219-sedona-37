@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles/style.css" >
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="favicon.ico" />
   </head>
   <body>
     <div class="page-container">
       <header class="page-header" data-test="header">
         <nav class="navigation">
           <a href="index.html" class="navigation-logo">
-            <img src="images/logo.svg" width="140" height="70" alt="логотип.">
+            <img src="images/logo.svg" width="140" height="70" alt="логотип." />
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -52,7 +52,7 @@
             width="458"
             height="352"
             alt="Welcome to the gorgeous Sedona. Because the Grand Canyon lucks!"
-          >
+          />
         </section>
 
         <section class="advantages" data-test="advantages">
@@ -71,7 +71,7 @@
                 width="800"
                 height="385"
                 alt="Зеленый дом с флагом."
-              >
+              />
             </li>
             <li class="advantages-item advantages-item-light-grey">
               <div class="advantages-item-container">
@@ -97,9 +97,9 @@
                 width="800"
                 height="385"
                 alt="Мост дьявола."
-              >
+              />
               <div class="advantages-item-container">
-                <h3>Там есть<br>мост дьявола</h3>
+                <h3>Там есть<br />мост дьявола</h3>
                 <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
@@ -113,41 +113,23 @@
           </p>
 
           <ul class="services-list">
-            <li class="services-item services-item-light-grey">
-              <img
-                src="images/advantage-home.svg"
-                width="75"
-                height="72"
-                alt="Дом."
-              >
+            <li class="services-item services-item-light-grey house">
               <h3>Жильё</h3>
               <p>
-                Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!
+                Рекомендуем пожить<br />в настоящем мотеле,<br />всё как в кино!
               </p>
             </li>
-            <li class="services-item">
-              <img
-                src="images/advantage-food.svg"
-                width="75"
-                height="72"
-                alt="Бургер."
-              >
+            <li class="services-item food">
               <h3>Еда</h3>
               <p>
-                Всегда заказывайте<br>топовый фирменный бургер,<br>вы не
+                Всегда заказывайте<br />топовый фирменный бургер,<br />вы не
                 разочаруетесь!
               </p>
             </li>
-            <li class="services-item services-item-light-grey">
-              <img
-                src="images/advantage-gift.svg"
-                width="75"
-                height="72"
-                alt="Подарок."
-              >
+            <li class="services-item services-item-light-grey gift">
               <h3>Сувениры</h3>
               <p>
-                Не только китайского,<br>но и настоящего местного
+                Не только китайского,<br />но и настоящего местного
                 производства!
               </p>
             </li>
@@ -157,7 +139,7 @@
         <section class="hotel-search" data-test="search">
           <h2>Заинтересовались?</h2>
           <p>
-            Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
+            Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
           <a href="catalog.html" class="button-brown"
@@ -184,7 +166,7 @@
               placeholder="Ваш e-mail"
               name="e-mail"
               required
-            >
+            />
             <button class="button-blue" type="submit">Подписаться</button>
           </form>
         </article>
@@ -318,7 +300,8 @@
               type="text"
               value="27 апреля 2020"
               name="date-from"
-            >
+              required
+            />
             <span class="modal-text-allert warning"
               >Мы не можем отправить вас в прошлое.</span
             ></label
@@ -331,7 +314,8 @@
               type="text"
               value="1 сентября 2023"
               name="date-to"
-            >
+              required
+            />
             <span class="modal-text-allert"
               >На эти даты есть свободные номера. Пока есть.</span
             ></label
@@ -349,7 +333,8 @@
                 id="adult"
                 max="10"
                 min="0"
-              >
+                required
+              />
               <button type="button" class="count-plus"></button>
             </div>
           </div>
@@ -372,7 +357,8 @@
                 name="children"
                 max="10"
                 min="0"
-              >
+                required
+              />
               <button type="button" class="count-plus"></button>
             </div>
           </div>

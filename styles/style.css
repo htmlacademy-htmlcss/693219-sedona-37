@@ -241,6 +241,10 @@ body {
   opacity: 70%;
 }
 
+.navigation-link:active {
+  opacity: 30%;
+}
+
 .navigation-link.active {
   text-decoration: underline;
   text-decoration-color: #756257;
@@ -412,15 +416,36 @@ body {
   padding: 0;
   list-style: none;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .services-item {
   width: 400px;
   padding: 81px 85px;
+  padding-top: 183px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
+  box-sizing: border-box;
+}
+
+.services-item.house {
+  background-image: url(../images/advantage-home.svg);
+  background-repeat: no-repeat;
+  background-position: top 26% left 50%;
+}
+
+.services-item.food {
+  background-image: url(../images/advantage-food.svg);
+  background-repeat: no-repeat;
+  background-position: top 26% left 50%;
+}
+
+.services-item.house {
+  background-image: url(../images/advantage-home.svg);
+  background-repeat: no-repeat;
+  background-position: top 26% left 50%;
 }
 
 .services h2 {
