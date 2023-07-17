@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" >
-    <link rel="stylesheet" href="styles/style.css" >
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="images/favicon.ico" >
+    <link rel="icon" href="favicon.ico" />
   </head>
   <body>
     <div class="page-container">
       <header class="page-header" data-test="header">
         <nav class="navigation">
           <a href="index.html" class="navigation-logo">
-            <img src="images/logo.svg" width="140" height="70" alt="логотип." >
+            <img src="images/logo.svg" width="140" height="70" alt="логотип." />
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -51,7 +51,9 @@
             <h1>Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a href="index.html" class="home"><span class="visually-hidden">Домой</span></a>
+                <a href="index.html" class="home"
+                  ><span class="visually-hidden">Домой</span></a
+                >
               </li>
               <li class="breadcrumbs-item">
                 <a href="catalog.html" class="breadcrumbs-link">Гостиницы</a>
@@ -73,7 +75,7 @@
                   name="Бассейн"
                   class="visually-hidden"
                   checked
-                >
+                />
                 <span class="control-mark"></span>
                 <span class="control-lable">Бассейн</span>
               </label>
@@ -83,12 +85,12 @@
                   name="Парковка"
                   class="visually-hidden"
                   checked
-                >
+                />
                 <span class="control-mark"></span>
                 <span class="control-lable">Парковка</span>
               </label>
               <label class="filter-label"
-                ><input type="checkbox" class="visually-hidden" name="Wi-Fi" >
+                ><input type="checkbox" class="visually-hidden" name="Wi-Fi" />
                 <span class="control-mark"></span>
                 <span class="control-lable">Wi-Fi</span>
               </label>
@@ -104,7 +106,7 @@
                   value="hotel"
                   class="visually-hidden"
                   checked
-                >
+                />
                 <span class="control-mark"></span>
                 <span class="control-lable">Гостиница</span>
               </label>
@@ -115,7 +117,7 @@
                   name="Жилье"
                   class="visually-hidden"
                   value="motel"
-                >
+                />
                 <span class="control-mark"></span>
                 <span class="control-lable">Мотель</span>
               </label>
@@ -126,7 +128,7 @@
                   name="Жилье"
                   class="visually-hidden"
                   value="apartments"
-                >
+                />
                 <span class="control-mark"></span>
                 <span class="control-lable">Апартаменты</span>
               </label>
@@ -142,7 +144,8 @@
                   value="0"
                   min="0"
                   max="10000"
-                >
+                  required
+                />
                 <span>от</span>
               </label>
 
@@ -154,7 +157,8 @@
                   value="9000"
                   min="0"
                   max="10000"
-                >
+                  required
+                />
                 <span>до</span>
               </label>
 
@@ -217,7 +221,7 @@
                 width="300"
                 height="212"
                 alt="Amara Resort & Spa."
-              >
+              />
 
               <p>Гостиница</p>
               <p class="priceHotel">От 4000 ₽</p>
@@ -243,7 +247,7 @@
                 width="300"
                 height="212"
                 alt="Villas at Poco Diablo."
-              >
+              />
 
               <p>Гостиница</p>
               <p class="priceHotel">От 5000 ₽</p>
@@ -269,7 +273,7 @@
                 width="300"
                 height="212"
                 alt="Desert Quail Inn."
-              >
+              />
 
               <p>Гостиница</p>
               <p class="priceHotel">От 2500 ₽</p>
@@ -294,7 +298,7 @@
                 width="300"
                 height="212"
                 alt="GreenTree Inn."
-              >
+              />
 
               <p>Гостиница</p>
               <p class="priceHotel">От 1500 ₽</p>
@@ -351,7 +355,7 @@
               placeholder="Ваш e-mail"
               name="e-mail"
               required
-            >
+            />
             <button class="button-blue" type="submit">Подписаться</button>
           </form>
         </article>
