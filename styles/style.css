@@ -442,8 +442,8 @@ body {
   background-position: top 26% left 50%;
 }
 
-.services-item.house {
-  background-image: url(../images/advantage-home.svg);
+.services-item.gift {
+  background-image: url(../images/advantage-gift.svg);
   background-repeat: no-repeat;
   background-position: top 26% left 50%;
 }
