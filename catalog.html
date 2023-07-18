@@ -136,31 +136,34 @@
 
             <fieldset class="price">
               <legend class="filter-legend">Стоимость, ₽:</legend>
-              <label class="price-lable">
-                <input
-                  type="number"
-                  name="minPrice"
-                  id="minPrice"
-                  value="0"
-                  min="0"
-                  max="10000"
-                  required
-                />
-                <span>от</span>
-              </label>
 
-              <label class="price-lable">
-                <input
-                  type="number"
-                  name="maxPrice"
-                  id="maxPrice"
-                  value="9000"
-                  min="0"
-                  max="10000"
-                  required
-                />
-                <span>до</span>
-              </label>
+              <div class="price-lables">
+                <label class="price-lable">
+                  <input
+                    type="number"
+                    name="minPrice"
+                    id="minPrice"
+                    value="0"
+                    min="0"
+                    max="10000"
+                    required
+                  />
+                  <span>от</span>
+                </label>
+
+                <label class="price-lable">
+                  <input
+                    type="number"
+                    name="maxPrice"
+                    id="maxPrice"
+                    value="9000"
+                    min="0"
+                    max="10000"
+                    required
+                  />
+                  <span>до</span>
+                </label>
+              </div>
 
               <div class="range-scale">
                 <div class="range-bar" style="left: 0; width: 226px">
